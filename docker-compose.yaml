@@ -30,7 +30,7 @@ services:
     image: prasad300/mysql:v1
     container_name: mysql
   shipping:
-    image: prasad300/shippng:v1
+    image: prasad300/shipping:v1
     container_name: shipping
     depends_on: 
     - mysql
