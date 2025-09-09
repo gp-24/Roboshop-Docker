@@ -56,5 +56,15 @@ services:
     - rabbitmq
     - cart
     - user
-
+  frontend:
+    image: prasad300/frontend:v1
+    container_on: frontend
+    ports:
+    - "80:80"
+    depends_on:
+    - catalogue
+    - user
+    - cart
+    - shipping
+    - payment
   
