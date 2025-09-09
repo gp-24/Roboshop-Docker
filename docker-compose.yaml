@@ -58,7 +58,7 @@ services:
     - user
   frontend:
     image: prasad300/frontend:v1
-    container_on: frontend
+    container_name: frontend
     ports:
     - "80:80"
     depends_on:
